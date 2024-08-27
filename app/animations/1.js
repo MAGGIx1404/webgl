@@ -2531,7 +2531,6 @@ void main() {
               this.$root.smooth &&
                 document.documentElement.classList.add("is-smooth"),
               d.a.addClasses(document.documentElement),
-              this.loadFonts(),
               this.setViewport("--vhf"),
               this.setViewport("--vh"),
               this.setTheme(),
@@ -2568,38 +2567,7 @@ void main() {
             },
             loadFonts: function () {
               var e = this;
-              if (document.fonts) {
-                var t = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Regular.woff2)",
-                    {
-                      style: "normal",
-                      weight: "200",
-                    }
-                  ),
-                  n = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Medium.woff2)",
-                    {
-                      style: "normal",
-                      weight: "400",
-                    }
-                  ),
-                  r = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Bold.woff2)",
-                    {
-                      style: "normal",
-                      weight: "800",
-                    }
-                  );
-                Promise.all([t.load(), n.load(), r.load()]).then(function () {
-                  document.fonts.add(t),
-                    document.fonts.add(n),
-                    document.fonts.add(r),
-                    e.$root.$emit("fonts:loaded");
-                });
-              } else this.$root.$emit("fonts:loaded");
+              this.$root.$emit("fonts:loaded");
             },
             setTheme: function () {
               var e =
@@ -2777,38 +2745,7 @@ void main() {
             },
             loadFonts: function () {
               var e = this;
-              if (document.fonts) {
-                var t = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Regular.woff2)",
-                    {
-                      style: "normal",
-                      weight: "200",
-                    }
-                  ),
-                  n = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Medium.woff2)",
-                    {
-                      style: "normal",
-                      weight: "400",
-                    }
-                  ),
-                  r = new FontFace(
-                    "AK Monument Grotesk",
-                    "url(/fonts/ABCMonumentGrotesk-Bold.woff2)",
-                    {
-                      style: "normal",
-                      weight: "800",
-                    }
-                  );
-                Promise.all([t.load(), n.load(), r.load()]).then(function () {
-                  document.fonts.add(t),
-                    document.fonts.add(n),
-                    document.fonts.add(r),
-                    e.$root.$emit("fonts:loaded");
-                });
-              } else this.$root.$emit("fonts:loaded");
+              this.$root.$emit("fonts:loaded");
             },
             setTheme: function () {
               var e =
@@ -3394,10 +3331,7 @@ void main() {
             "experiences,",
             "and community.",
           ],
-          about: {
-            paragraph:
-              "We believe that the potential of web3 can be realized when we start with imagination, not limitations. No borders, no rulers, just people making cool shit, together. In the Yugaverse, fans and players are owners and creators, and in the game of web3, everyone can create and play together on one team.",
-          },
+          about: {},
           projects: {
             title: {
               mobile: "The Yugaverse",
