@@ -1850,9 +1850,13 @@
               key: "init",
               value: function () {
                 var e = this,
-                  t = new _.r().load("/images/bg4.png");
+                  t = new _.r().load(
+                    "https://res.cloudinary.com/drnquxnie/image/upload/v1724773960/bg4_eaq3vf.png"
+                  );
                 (t.wrapS = _.o), (t.wrapT = _.o);
-                var n = new _.r().load("/images/logo.png"),
+                var n = new _.r().load(
+                    "https://res.cloudinary.com/drnquxnie/image/upload/v1724773960/logo_qfjhby.png"
+                  ),
                   r = [0, 1, 2, 3];
                 this.material = new _.q({
                   extensions: {
