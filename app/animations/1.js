@@ -1850,13 +1850,9 @@
               key: "init",
               value: function () {
                 var e = this,
-                  t = new _.r().load(
-                    "".concat(window.location.origin, "/images/bg4.png")
-                  );
+                  t = new _.r().load("/images/bg4.png");
                 (t.wrapS = _.o), (t.wrapT = _.o);
-                var n = new _.r().load(
-                    "".concat(window.location.origin, "/images/logo.png")
-                  ),
+                var n = new _.r().load("/images/logo.png"),
                   r = [0, 1, 2, 3];
                 this.material = new _.q({
                   extensions: {
