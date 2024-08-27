@@ -1,0 +1,2066 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+@font-face {
+  font-family: AK Monument Grotesk;
+  font-style: normal;
+  font-weight: 200;
+  src: url(/fonts/ABCMonumentGrotesk-Regular.woff2) format("woff2"),
+    url(/fonts/ABCMonumentGrotesk-Regular.woff) format("woff"),
+    url(/fonts/ABCMonumentGrotesk-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AK Monument Grotesk;
+  font-style: normal;
+  font-weight: 400;
+  src: url(/fonts/ABCMonumentGrotesk-Medium.woff2) format("woff2"),
+    url(/fonts/ABCMonumentGrotesk-Medium.woff) format("woff"),
+    url(/fonts/ABCMonumentGrotesk-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: AK Monument Grotesk;
+  font-style: normal;
+  font-weight: 800;
+  src: url(/fonts/ABCMonumentGrotesk-Bold.woff2) format("woff2"),
+    url(/fonts/ABCMonumentGrotesk-Bold.woff) format("woff"),
+    url(/fonts/ABCMonumentGrotesk-Bold.otf) format("opentype");
+}
+
+:root {
+  --header: 4.0625rem;
+  --color: #fff;
+  --background: #000;
+  --color-invert: #fff;
+  --background-invert: #000;
+  --masking: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  --height: 100vh;
+}
+
+.is-ios,
+.is-ipad-os {
+  --height: calc(var(--vhf) * 100);
+}
+
+*,
+:after,
+:before {
+  -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  overscroll-behavior: none;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  font-family: AK Monument Grotesk;
+  font-size: 100%;
+}
+
+html.--locked {
+  overflow: hidden;
+}
+
+html.--progress,
+html.--progress * {
+  cursor: progress;
+}
+
+body {
+  background-color: #000;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.25rem;
+}
+
+#__layout,
+#__layout > div,
+#__nuxt,
+main {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.u-abs {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.u-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.u-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-aib {
+  align-items: baseline;
+}
+
+.--mobile {
+  display: inline;
+  display: initial;
+}
+
+@media (min-width: 43.75rem) {
+  .--mobile {
+    display: none !important;
+  }
+}
+
+.--desktop {
+  display: none !important;
+}
+
+@media (min-width: 43.75rem) {
+  .--desktop {
+    display: inline !important;
+    display: initial !important;
+  }
+}
+
+.page {
+  height: auto;
+  max-width: 100vw;
+  min-height: 100vh;
+  opacity: 0;
+  position: relative;
+  visibility: hidden;
+  width: 100%;
+}
+
+.page__padding {
+  padding: 1.25rem 0.9375rem;
+}
+
+@media (min-width: 43.75rem) {
+  .page__padding {
+    padding: 1.875rem;
+  }
+
+  .page__padding .title:first-child {
+    margin-top: 0.9375rem;
+  }
+}
+
+.page__layer {
+  background-color: #fff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+}
+
+[data-sticky] {
+  position: sticky;
+  top: 0;
+}
+
+[data-sticky="sm"] {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  [data-sticky="sm"] {
+    position: sticky;
+  }
+}
+
+[data-sticky-masked] {
+  bottom: 0;
+}
+
+.is-smooth [data-scroll-transition] {
+  --translate: 50px;
+  transition: opacity 0.3s linear 0.1s,
+    transform 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media (min-width: 43.75rem) {
+  .is-smooth [data-scroll-transition] {
+    --translate: 100px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .is-smooth [data-scroll-transition] {
+    --translate: 130px;
+  }
+}
+
+@media (min-width: 90rem) {
+  .is-smooth [data-scroll-transition] {
+    --translate: 160px;
+  }
+}
+
+.is-smooth [data-scroll-transition].Out-view {
+  opacity: 0;
+}
+
+.is-smooth [data-scroll-transition].Out-view.Out-top {
+  transform: translate3d(0, calc(var(--translate) * -1), 0);
+}
+
+.is-smooth [data-scroll-transition].Out-view.Out-bottom {
+  transform: translate3d(0, var(--translate), 0);
+}
+
+.is-smooth [data-scroll-transition].In-view {
+  opacity: 1;
+  transform: none;
+}
+
+.template-page {
+  background: #fff;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.template-page__close {
+  align-items: center;
+  background: #000;
+  border-radius: 5.625rem;
+  color: #fff;
+  display: inline-flex;
+  height: 3.1875rem;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 1.875rem;
+  position: fixed;
+  right: 0.9375rem;
+  top: 1.5625rem;
+  z-index: 5;
+}
+
+@media (min-width: 43.75rem) {
+  .template-page__close {
+    right: 1.875rem;
+  }
+}
+
+.template-page__close span {
+  font: 400 1rem/1 AK Monument Grotesk;
+}
+
+.template-page__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.875rem 1.875rem 9.375rem;
+}
+
+@media (min-width: 43.75rem) {
+  .template-page__content {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.template-page__content [data-sticky] {
+  top: 1.875rem;
+}
+
+.template-page h1 {
+  margin-bottom: 2.1875rem;
+  max-width: 17.5rem;
+}
+
+@media screen and (max-width: 1380px) {
+  .template-page h1 {
+    font-size: 4.0625rem;
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .template-page h1 {
+    font-size: 2.8125rem;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .template-page h1 {
+    margin-bottom: 0;
+    max-width: 90%;
+  }
+}
+
+.template-page__text {
+  max-width: 24.375rem;
+}
+
+.template-page__text p {
+  margin-bottom: 1.25rem;
+}
+
+.template-page__text a,
+.template-page__text u {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.template-page__text u:after {
+  content: none;
+}
+
+.template-page__text ul {
+  margin-top: 0.625rem;
+}
+
+.template-page__text ul li {
+  margin-bottom: 1.25rem;
+}
+
+.section__introduction {
+  grid-template-row: repeat(1, 1fr);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 43.75rem) {
+  .section__introduction {
+    grid-template-row: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.section__introduction__title {
+  grid-column: span 2;
+}
+
+.section__introduction__title .word {
+  display: block;
+  overflow: hidden;
+}
+
+.section__introduction__title .word .word__inner {
+  display: block;
+}
+
+.section__introduction__paragraph {
+  font: 400 1.625rem/90% AK Monument Grotesk;
+  grid-column: 1;
+  grid-row: 2;
+  letter-spacing: -0.02em;
+  margin: 3.125rem 0 6.25rem;
+  max-width: 80%;
+}
+
+.section__introduction__paragraph .word {
+  display: inline-block;
+  margin-right: 0.3125rem;
+  margin-top: -0.3125rem;
+  overflow: hidden;
+  padding-bottom: 0.3125rem;
+}
+
+.section__introduction__paragraph .word .word__inner {
+  display: block;
+}
+
+@media (min-width: 43.75rem) {
+  .section__introduction__paragraph {
+    font-size: 2.1875rem;
+    grid-column: 2;
+    margin: 5.625rem 0 10.625rem;
+    max-width: 26.25rem;
+  }
+
+  .section__introduction__paragraph .word {
+    margin-right: 0.3125rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .section__introduction__paragraph {
+    font-size: 3.25rem;
+    margin: 7.1875rem 0 10.625rem;
+    max-width: 32.5rem;
+  }
+
+  .section__introduction__paragraph .word {
+    margin-right: 0.625rem;
+  }
+}
+
+.__nuxt-error-page {
+  background: none;
+}
+
+.__nuxt-error-page .error svg {
+  display: none;
+}
+
+.__nuxt-error-page .error .title {
+  color: #fff;
+  font-family: AK Monument Grotesk;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 84%;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: none;
+}
+
+.__nuxt-error-page .error .description {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-family: AK Monument Grotesk;
+  font-size: 0.875rem;
+  font-style: normal;
+  letter-spacing: -0.01em;
+  line-height: 110%;
+  margin: 0 auto;
+  max-width: 15.625rem;
+  text-align: center;
+}
+
+.__nuxt-error-page .error .logo {
+  display: none;
+}
+
+.legal-page {
+  background: #fff;
+  color: #000;
+}
+
+.legal-page__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.875rem 1.875rem 9.375rem;
+}
+
+@media (min-width: 43.75rem) {
+  .legal-page__content {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.legal-page__content [data-sticky] {
+  top: 1.875rem;
+}
+
+.legal-page h1 {
+  margin-bottom: 2.1875rem;
+  max-width: 17.5rem;
+}
+
+@media screen and (max-width: 1380px) {
+  .legal-page h1 {
+    font-size: 4.0625rem;
+  }
+}
+
+@media screen and (max-width: 892px) {
+  .legal-page h1 {
+    font-size: 2.8125rem;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .legal-page h1 {
+    margin-bottom: 0;
+    max-width: 90%;
+  }
+}
+
+.legal-page__text {
+  font-size: 0.875rem;
+  max-width: 60ch;
+}
+
+.legal-page__text table,
+.legal-page__text td,
+.legal-page__text th {
+  border: 1px solid gray;
+}
+
+.legal-page__text table {
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-bottom: 1.25rem;
+}
+
+.legal-page__text table th {
+  background: #f5f5f5;
+  font: 400 0.875rem/110% AK Monument Grotesk;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.legal-page__text table td {
+  font: 200 0.875rem/110% AK Monument Grotesk;
+  padding: 0.75rem;
+  vertical-align: top;
+  width: 50%;
+}
+
+.legal-page__text table ul li {
+  margin-bottom: 0;
+}
+
+.legal-page__text h2 {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.legal-page__text h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.legal-page__text em,
+.legal-page__text em strong {
+  font-style: italic;
+}
+
+.legal-page__text p {
+  line-height: 1.38;
+  margin-bottom: 1.25rem;
+}
+
+.legal-page__text a,
+.legal-page__text u {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.legal-page__text u:after {
+  content: none;
+}
+
+.legal-page__text ol {
+  margin-top: 0.625rem;
+}
+
+.legal-page__text ol li {
+  line-height: 1.38;
+  margin-left: 0;
+}
+
+.legal-page__text ul {
+  list-style: disc;
+  margin-top: 0.625rem;
+}
+
+.legal-page__text ul li {
+  line-height: 1.38;
+  margin-bottom: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.legal-page strong {
+  font-size: inherit;
+}
+
+:root {
+  --title: 2.5rem;
+}
+
+@media (min-width: 43.75rem) {
+  :root {
+    --title: 10rem;
+  }
+}
+
+a {
+  color: currentColor;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+strong {
+  font: 800 1rem/1.25 AK Monument Grotesk;
+}
+
+li,
+p,
+ul {
+  font: 200 0.875rem/110% AK Monument Grotesk;
+}
+
+.title {
+  font-feature-settings: "ordn" on, "salt" on, "ss01" on, "ss02" on, "ss03" on,
+    "liga" off, "calt" off;
+  font: 800 2.5rem/82% AK Monument Grotesk;
+  font: 800 var(--title) / 82% AK Monument Grotesk;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.title--medium {
+  font-size: 2rem;
+  line-height: 90%;
+  text-transform: none;
+}
+
+.title--large {
+  font-size: 2.1875rem;
+}
+
+@media (min-width: 43.75rem) {
+  .title--large {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .title--large {
+    font-size: 6.375rem;
+  }
+}
+
+.title--xslarge {
+  font-size: 2.5rem;
+}
+
+@media (min-width: 43.75rem) {
+  .title--xslarge {
+    font-size: 6.875rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .title--xslarge {
+    font-size: 9.5rem;
+  }
+}
+
+.title--xlarge {
+  font-size: 3.125rem;
+}
+
+@media (min-width: 43.75rem) {
+  .title--xlarge {
+    font-size: 6.375rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .title--xlarge {
+    font-size: 8.875rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .title--xlarge {
+    font-size: 12.625rem;
+  }
+}
+
+.title--circled {
+  background-color: #000;
+  border-radius: 5.625rem;
+  color: #fff;
+  line-height: 82%;
+  padding: 0 2.1875rem;
+}
+
+.paragraph {
+  font-feature-settings: "ordn" on, "salt" on, "ss01" on, "ss02" on, "ss03" on,
+    "liga" off, "calt" off;
+  font: 800 1.625rem/90% AK Monument Grotesk;
+  letter-spacing: -0.02em;
+  max-width: 90%;
+}
+
+@media (min-width: 43.75rem) {
+  .paragraph {
+    font-size: 3.25rem;
+    max-width: 75%;
+  }
+}
+
+.paragraph .line {
+  display: block;
+  position: relative;
+}
+
+.paragraph .word {
+  margin-right: 0.625rem;
+}
+
+.paragraph .word,
+u {
+  display: inline-block;
+  position: relative;
+}
+
+u {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+u:after {
+  background: currentColor;
+  bottom: 0;
+  content: "";
+  height: 0.125rem;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 43.75rem) {
+  .title--xslarge u:after,
+  .title--xxlarge u:after {
+    bottom: 0.25rem;
+    height: 0.25rem;
+  }
+}
+
+.rounded {
+  align-items: center;
+  background-color: #000;
+  border: 2px solid #000;
+  border-radius: 5.625rem;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 2.5rem;
+  justify-content: center;
+  padding: 0 1.25rem;
+}
+
+@media (min-width: 64rem) {
+  .rounded {
+    height: 3.1875rem;
+  }
+}
+
+.rounded span {
+  display: block;
+  font: 400 0.875rem/1 AK Monument Grotesk;
+}
+
+@media (min-width: 64rem) {
+  .rounded span {
+    font-size: 1rem;
+  }
+}
+
+.rounded.--light {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.rounded.--light.--outlined {
+  background-color: transparent;
+}
+
+.rounded.--light.--outlined: hover,.rounded:hover {
+  background-color: #fff;
+}
+
+.rounded:hover {
+  color: #000;
+}
+
+.outline {
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 0.625rem;
+  display: inline-flex;
+  height: 4rem;
+  margin: 0.3125rem 0;
+  padding: 0.9375rem 1.0625rem 0;
+}
+
+@media (min-width: 43.75rem) {
+  .outline {
+    border-radius: 1.875rem;
+    height: 7.5rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem 1.25rem 0 0.9375rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .outline {
+    border-radius: 1.875rem;
+    height: 9.1875rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem 1.25rem 0 0.9375rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .outline {
+    height: 12.5rem;
+    margin: 0.9375rem 0;
+    padding: 1.4375rem 1.5625rem 0 1.25rem;
+  }
+}
+
+.title--large .outline {
+  height: 2.8125rem;
+  padding: 0.5rem 0.625rem 0;
+}
+
+@media (min-width: 43.75rem) {
+  .title--large .outline {
+    border-radius: 1.0625rem;
+    height: 5.625rem;
+    margin: 0.625rem 0;
+    padding: 0.9375rem 0.9375rem 0 0.625rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .title--large .outline {
+    border-radius: 1.0625rem;
+    height: 7.1875rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem 1.25rem 0 0.9375rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .title--large .outline {
+    height: 7.1875rem;
+    margin: 0.9375rem 0;
+    padding: 1.25rem 1.5625rem 0 1.25rem;
+  }
+}
+
+@media (min-width: 43.75rem) {
+  .title--xlarge .outline {
+    border-radius: 1.875rem;
+    height: 7.5rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem 1.25rem 0 0.9375rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .title--xlarge .outline {
+    border-radius: 1.875rem;
+    height: 9.1875rem;
+    margin: 0.625rem 0;
+    padding: 1.25rem 1.25rem 0 0.9375rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .title--xlarge .outline {
+    height: 12.5rem;
+    margin: 0.9375rem 0;
+    padding: 1.4375rem 1.5625rem 0 1.25rem;
+  }
+}
+
+.outline:not(.no-hover):hover {
+  background: #fff;
+  color: #000;
+}
+
+.line {
+  overflow: hidden;
+}
+
+.line__animation {
+  display: inline-block;
+}
+
+.is-smooth .line__animation {
+  transform: translate3d(0, 110%, 0);
+  transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.is-smooth .line__animation.In-view {
+  transform: none;
+  transition-delay: 0.25s;
+}
+
+.section__links {
+  margin-bottom: 6.25rem;
+  text-align: center;
+}
+
+.section__links.--left {
+  text-align: left;
+}
+
+@media (min-width: 43.75rem) {
+  .section__links {
+    margin-bottom: 9.6875rem;
+    text-align: left;
+  }
+}
+
+.section__links.--center {
+  text-align: center;
+}
+
+@media (max-width: 43.6875rem) {
+  .section__links .title:not(.--force-large) {
+    font-size: 2.5rem;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news {
+  grid-gap: 1.5625rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 1.25rem 0 6.25rem;
+}
+
+@media (min-width: 43.75rem) {
+  .news {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1.25rem 0 11.25rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.news__item {
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+}
+
+.news__item.In-view {
+  transition-delay: var(--delay);
+}
+
+.news__item__content {
+  align-items: flex-start;
+  background: #000;
+  border: 1px solid;
+  border-radius: 1.25rem;
+  bottom: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  left: 0;
+  padding: 1.25rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 43.75rem) {
+  .news__item__content {
+    padding: 2.5rem;
+  }
+}
+
+.news__item__content:hover {
+  background: #fff;
+  color: #000;
+}
+
+.news__item__content:hover .label {
+  background-color: #000;
+  color: #fff;
+}
+
+.news__item p {
+  color: currentColor;
+  display: block;
+  font: 700 2rem/90% AK Monument Grotesk;
+  letter-spacing: -0.02em;
+  max-width: 95%;
+}
+
+@media (min-width: 43.75rem) {
+  .news__item p {
+    max-width: 80%;
+  }
+}
+
+.news__item__more svg {
+  margin-right: 0.3125rem;
+}
+
+.news__item__more span {
+  font: 400 0.875rem/1rem AK Monument Grotesk;
+}
+
+.article footer,
+.article section:not(.article) {
+  background: #000;
+  color: #fff;
+}
+
+.article footer,
+.article section {
+  margin-top: -0.0625rem;
+}
+
+.article aside [data-sticky] {
+  top: 3.125rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateZ(0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    transform: translateZ(0);
+  }
+}
+
+.header {
+  opacity: 0;
+  position: fixed;
+  right: 0;
+  visibility: hidden;
+  width: 100vw;
+  z-index: 99999;
+}
+
+.header,
+.header__el {
+  bottom: 0;
+  height: 3.125rem;
+  left: 0;
+}
+
+.header__el {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 43.75rem) {
+  .header__el {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+}
+
+.header__el:before {
+  content: "";
+  height: 0.0625rem;
+  left: 0.9375rem;
+  position: absolute;
+  right: 0.9375rem;
+  top: 0;
+}
+
+@media (min-width: 43.75rem) {
+  .header__el:before {
+    left: 1.875rem;
+    right: 1.875rem;
+  }
+}
+
+.header__el.--white {
+  background: var(--background);
+  color: var(--color);
+}
+
+.header__el.--white: before {
+  background: var(--color);
+}
+
+.--header-transparent .header__el.--white {
+  background: transparent;
+}
+
+.header__el.--black {
+  background: var(--background-invert);
+  -webkit-clip-path: var(--masking);
+  clip-path: var(--masking);
+  color: var(--color-invert);
+  transition: opacity 0.4s linear;
+}
+
+.header__el.--black: before {
+  background: var(--color-invert);
+}
+
+.--header-transparent .header__el.--black {
+  background: transparent;
+}
+
+.--menu .header__el.--black {
+  opacity: 0;
+}
+
+.header__nav {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header__nav.--nav-desktop {
+  display: none;
+}
+
+@media (min-width: 64rem) {
+  .header__nav.--nav-desktop {
+    display: flex;
+  }
+}
+
+.header__nav.--nav-mobile {
+  display: flex;
+}
+
+@media (min-width: 64rem) {
+  .header__nav.--nav-mobile {
+    display: none;
+  }
+}
+
+.header__nav.--right li {
+  margin-left: 0.3125rem;
+}
+
+@media (min-width: 43.75rem) {
+  .header__nav.--right li {
+    margin-left: 0.625rem;
+  }
+}
+
+.header__nav li {
+  align-items: center;
+  display: flex;
+}
+
+.header__nav li a {
+  font: 400 0.875rem/1 AK Monument Grotesk;
+  position: relative;
+}
+
+.--white .header__nav li a {
+  color: var(--color);
+}
+
+.--white .header__nav li a: after {
+  background: var(--color);
+}
+
+.--black .header__nav li a {
+  color: var(--color-invert);
+}
+
+.--black .header__nav li a: after {
+  background: var(--color-invert);
+}
+
+.header__nav li a:after {
+  bottom: 0;
+  content: "";
+  height: 0.0625rem;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right center;
+  transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+}
+
+.header__nav li a:hover:after,
+.header__nav li a:not(.is-logo).nuxt-link-exact-active:after {
+  transform: none;
+  transform-origin: left center;
+}
+
+.menu {
+  background: var(--background);
+  color: var(--color);
+  height: 100vh;
+  opacity: 0;
+  position: fixed;
+  text-align: center;
+  visibility: hidden;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu ul li {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu ul li a {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 82%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.logo {
+  bottom: 4.375rem;
+  height: 4.8125rem;
+  overflow: hidden;
+  position: fixed;
+  right: 0.9375rem;
+  width: 4.5rem;
+}
+
+@media (min-width: 43.75rem) {
+  .logo {
+    bottom: 4.6875rem;
+    height: 6.875rem;
+    right: 1.875rem;
+    width: 6.5rem;
+  }
+}
+
+.logo div {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo svg {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.webgl {
+  height: var(--height);
+  opacity: 0;
+  position: fixed;
+  transform: scale3d(1.25, 1.25, 1.25);
+  visibility: hidden;
+}
+
+.webgl,
+.webgl canvas {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.webgl canvas {
+  height: 100%;
+  position: absolute;
+}
+
+.footer {
+  margin-top: -1px;
+  position: relative;
+}
+
+.footer.--dark {
+  background: #000;
+  color: #fff;
+}
+
+.footer.--light {
+  background: #fff;
+  color: #000;
+}
+
+.footer__grid {
+  border-top: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding-bottom: 8.4375rem;
+  padding-top: 1.5625rem;
+}
+
+@media (min-width: 43.75rem) {
+  .footer__grid {
+    padding-bottom: 15.3125rem;
+  }
+}
+
+@media (min-width: 64rem) {
+  .footer__grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+.footer__grid ul {
+  grid-column: span 2;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__grid ul:nth-child(2) {
+  grid-column: span 3;
+}
+
+@media (max-width: 43.6875rem) {
+  .footer__grid ul:nth-child(2) {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+  }
+}
+
+.footer__grid ul:last-child {
+  grid-column: last;
+  text-align: right;
+}
+
+.footer__grid ul li {
+  font: 400 0.875rem/90% AK Monument Grotesk;
+}
+
+@media (min-width: 43.75rem) {
+  .footer__grid ul li {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.footer__grid ul li a {
+  color: currentColor;
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.footer__grid ul li a:hover {
+  opacity: 0.5;
+}
+
+.index {
+  color: var(--color);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.index__section {
+  margin-top: -1px;
+  position: relative;
+}
+
+.index__section:not(.--min-height-unset) {
+  min-height: var(--height);
+}
+
+.index__section:not(.--min-height-unset).--webgl {
+  height: var(--height);
+}
+
+.index__section:not(.--min-height-unset) > div {
+  min-height: var(--height);
+}
+
+.index__section > div {
+  padding: 0.9375rem;
+}
+
+@media (min-width: 43.75rem) {
+  .index__section > div {
+    padding: 1.25rem 1.875rem;
+  }
+}
+
+.intro {
+  background: var(--background);
+  color: var(--color);
+  height: 300vh;
+}
+
+.is-desktop .intro {
+  background: transparent;
+}
+
+.about[data-v-fb6d0c54] {
+  background: var(--background);
+  color: var(--color);
+  overflow: hidden;
+  padding: 1.875rem 0 21.875rem;
+}
+
+.is-desktop .about[data-v-fb6d0c54] {
+  background: transparent;
+}
+
+@media (min-width: 43.75rem) {
+  .about[data-v-fb6d0c54] {
+    background: transparent;
+    padding: 28.125rem 0 0;
+  }
+}
+
+.projects[data-v-1a2b9db8] {
+  --margin: 0.625rem;
+  --size: calc(100vw - 1.875rem);
+  background: var(--background);
+  color: var(--color);
+}
+
+@media (min-width: 43.75rem) {
+  .projects[data-v-1a2b9db8] {
+    --size: calc(100vh - var(--header) - var(--margin) - var(--title));
+    height: 500vh;
+  }
+}
+
+.projects__content[data-v-1a2b9db8] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__content[data-v-1a2b9db8] {
+    flex-direction: column;
+  }
+}
+
+.projects__grid[data-v-1a2b9db8] {
+  display: flex;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__grid[data-v-1a2b9db8] {
+    height: var(--size);
+  }
+}
+
+.projects__wrap[data-v-1a2b9db8] {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__wrap[data-v-1a2b9db8] {
+    flex-direction: row;
+  }
+}
+
+.projects__item[data-v-1a2b9db8] {
+  align-items: center;
+  border-radius: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  justify-content: center;
+  margin-bottom: 0.9375rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item[data-v-1a2b9db8] {
+    align-items: flex-start;
+    aspect-ratio: 1/1;
+    height: var(--size);
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-right: 1.875rem;
+    width: var(--size);
+  }
+}
+
+.projects__item[data-v-1a2b9db8]:last-of-type {
+  margin-bottom: 6.25rem;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item[data-v-1a2b9db8]:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.projects__item__asset[data-v-1a2b9db8] {
+  aspect-ratio: 1/1;
+  border-radius: 1.875rem;
+  height: var(--size);
+  overflow: hidden;
+  position: relative;
+  width: var(--size);
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item__asset[data-v-1a2b9db8] {
+    position: absolute;
+  }
+}
+
+.projects__item__logo img[data-v-1a2b9db8] {
+  display: block;
+  height: auto;
+  max-width: 14.6875rem;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item__logo img[data-v-1a2b9db8] {
+    max-width: 21.5625rem;
+  }
+}
+
+.projects__item__loop[data-v-1a2b9db8] {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.projects__item__loop img[data-v-1a2b9db8],
+.projects__item__loop picture[data-v-1a2b9db8] {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.projects__item__label[data-v-1a2b9db8] {
+  padding-top: 0.9375rem;
+  pointer-events: none;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item__label[data-v-1a2b9db8] {
+    padding-top: 1.875rem;
+    transform: translate3d(0, -100%, 0);
+    transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 100%;
+  }
+}
+
+.projects__item__label > div[data-v-1a2b9db8] {
+  align-items: center;
+  background: #000;
+  border-radius: 1.875rem;
+  display: flex;
+  height: 2.8125rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__item__label > div[data-v-1a2b9db8] {
+    background: transparent;
+    border-radius: 0;
+    height: auto;
+  }
+}
+
+.projects__item__label > div span[data-v-1a2b9db8] {
+  color: #fff;
+  font: 800 1rem/1 AK Monument Grotesk;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.projects__item:hover .projects__item__label[data-v-1a2b9db8] {
+  transform: none;
+}
+
+.projects__title[data-v-1a2b9db8] {
+  display: flex;
+  margin-bottom: 0.9375rem;
+  max-width: 90%;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__title[data-v-1a2b9db8] {
+    margin-bottom: 0;
+    margin-top: 1.5625rem;
+    max-width: calc(100% - 7.5rem);
+  }
+}
+
+.projects__title[data-v-1a2b9db8]:before {
+  background: linear-gradient(270deg, var(--background) 0, transparent 82.89%);
+  height: 8.75rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 9.5rem;
+  z-index: 3;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__title[data-v-1a2b9db8]:before {
+    content: "";
+  }
+}
+
+.projects__title[data-v-1a2b9db8]:after {
+  background: var(--background);
+  height: 8.75rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  width: 9.5rem;
+  z-index: 3;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__title[data-v-1a2b9db8]:after {
+    content: "";
+  }
+}
+
+.projects__title__wrap[data-v-1a2b9db8] {
+  display: flex;
+}
+
+@media (min-width: 43.75rem) {
+  .projects__title__wrap span[data-v-1a2b9db8] {
+    white-space: nowrap;
+  }
+}
+
+.apecoin {
+  background: #fff;
+  color: #000;
+  height: auto;
+  min-height: var(--height);
+  overflow: hidden;
+}
+
+@media (min-width: 43.75rem) {
+  .apecoin {
+    min-height: auto;
+  }
+}
+
+.apecoin .title {
+  margin-bottom: 22.5rem;
+  max-width: 90%;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  .apecoin .title {
+    margin-bottom: 18.125rem;
+    max-width: 70%;
+  }
+}
+
+.apecoin .title u {
+  cursor: pointer;
+  position: relative;
+}
+
+.apecoin .hover {
+  background: #000;
+  bottom: 3.125rem;
+  height: 15.625rem;
+  opacity: 0;
+  pointer-events: none;
+  right: 3.125rem;
+  transform: translate3d(100%, 100%, 0);
+  visibility: hidden;
+  width: 15.625rem;
+}
+
+.apecoin .hover,
+.apecoin .hover video {
+  border-radius: 1.25rem;
+  overflow: hidden;
+  position: absolute;
+}
+
+.apecoin .hover video {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.apecoin .line {
+  display: block;
+  position: relative;
+}
+
+.apecoin .word {
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+}
+
+@media (min-width: 43.75rem) {
+  .apecoin .word {
+    margin-right: 1.125rem;
+  }
+}
+
+.apecoin .paragraph {
+  margin-bottom: 1.875rem;
+  max-width: 90%;
+}
+
+@media (min-width: 43.75rem) {
+  .apecoin .paragraph {
+    margin-bottom: 2.5rem;
+    max-width: 80%;
+  }
+}
+
+.apecoin .paragraph .word {
+  margin-right: 0.3125rem;
+}
+
+@media (min-width: 43.75rem) {
+  .apecoin .paragraph .word {
+    margin-right: 0.625rem;
+  }
+}
+
+.apecoin__button {
+  display: flex;
+  margin-bottom: 1.875rem;
+}
+
+.index__footer {
+  background: #fff;
+  color: #000;
+}
+
+.index__footer__join {
+  border-top: 1px solid #000;
+  flex-direction: column;
+  min-height: var(--height);
+}
+
+.index__footer__join__line {
+  display: block;
+  margin: 0.9375rem 0;
+}
+
+.index__footer__join .title {
+  align-items: center;
+  display: inline-flex;
+  font-size: 3.125rem;
+  white-space: nowrap;
+}
+
+@media (min-width: 64rem) {
+  .index__footer__join .title {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .index__footer__join .title {
+    font-size: 6.375rem;
+  }
+}
+
+.index__footer__buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 43.75rem) {
+  .index__footer__buttons {
+    flex-direction: row;
+  }
+}
+
+.index__footer__buttons a {
+  margin: 0 0.3125rem 0.9375rem;
+}
+
+@media (min-width: 43.75rem) {
+  .index__footer__buttons a {
+    margin: 0 0.3125rem;
+  }
+}
+
+.collections {
+  margin-top: -1px;
+  position: relative;
+}
+
+.collections .collection_header {
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+.collections .collection_grid {
+  min-width: 160px;
+  padding: 12px;
+}
+
+.collections h4 {
+  font-size: 1.5rem;
+}
+
+.collections.--dark {
+  background: #000;
+  color: #fff;
+}
+
+.collections.--light {
+  background: #fff;
+  color: #000;
+}
+
+.collections__grid {
+  border-top: 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1.5625rem;
+}
+
+.collections__grid ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0.375rem;
+}
+
+.collections__grid ul li {
+  font: 400 0.875rem/90% AK Monument Grotesk;
+  padding-bottom: 0.125rem;
+  text-align: left;
+}
+
+@media (min-width: 43.75rem) {
+  .collections__grid ul li {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.collections__grid ul li a {
+  color: currentColor;
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.collections__grid ul li a:hover {
+  opacity: 0.5;
+}
