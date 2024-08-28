@@ -52966,87 +52966,11 @@
         },
         routes: [
           {
-            path: "/preview",
-            component: function () {
-              return Object(E.n)(n.e(48).then(n.bind(null, 632)));
-            },
-            name: "prismic-preview",
-          },
-          {
-            path: "/3d-avatar-terms",
-            component: function () {
-              return Object(E.n)(n.e(34).then(n.bind(null, 633)));
-            },
-            name: "3d-avatar-terms",
-          },
-          {
-            path: "/about",
-            component: function () {
-              return Object(E.n)(
-                Promise.all([n.e(0), n.e(36)]).then(n.bind(null, 634))
-              );
-            },
-            name: "about",
-          },
-          {
-            path: "/careers",
-            component: function () {
-              return Object(E.n)(
-                Promise.all([n.e(0), n.e(37)]).then(n.bind(null, 635))
-              );
-            },
-            name: "careers",
-          },
-          {
-            path: "/links",
-            component: function () {
-              return Object(E.n)(n.e(40).then(n.bind(null, 636)));
-            },
-            name: "links",
-          },
-          {
-            path: "/press",
-            component: function () {
-              return Object(E.n)(n.e(41).then(n.bind(null, 637)));
-            },
-            name: "press",
-          },
-          {
-            path: "/privacy",
-            component: function () {
-              return Object(E.n)(
-                Promise.all([n.e(46), n.e(42)]).then(n.bind(null, 631))
-              );
-            },
-            name: "privacy",
-          },
-          {
-            path: "/terms",
-            component: function () {
-              return Object(E.n)(n.e(43).then(n.bind(null, 638)));
-            },
-            name: "terms",
-          },
-          {
             path: "/",
             component: function () {
               return Object(E.n)(n.e(38).then(n.bind(null, 639)));
             },
             name: "index",
-          },
-          {
-            path: "/links/:id",
-            component: function () {
-              return Object(E.n)(n.e(39).then(n.bind(null, 640)));
-            },
-            name: "links-id",
-          },
-          {
-            path: "/*",
-            component: function () {
-              return Object(E.n)(n.e(35).then(n.bind(null, 643)));
-            },
-            name: "all",
           },
         ],
         fallback: !1,
@@ -53225,103 +53149,12 @@
           function () {
             var t = this,
               e = t._self._c;
-            return e(
-              "div",
-              {
-                staticClass: "__nuxt-error-page",
-              },
-              [
-                e(
-                  "div",
-                  {
-                    staticClass: "error",
-                  },
-                  [
-                    e(
-                      "svg",
-                      {
-                        attrs: {
-                          xmlns: "http://www.w3.org/2000/svg",
-                          width: "90",
-                          height: "90",
-                          fill: "#DBE1EC",
-                          viewBox: "0 0 48 48",
-                        },
-                      },
-                      [
-                        e("path", {
-                          attrs: {
-                            d: "M22 30h4v4h-4zm0-16h4v12h-4zm1.99-10C12.94 4 4 12.95 4 24s8.94 20 19.99 20S44 35.05 44 24 35.04 4 23.99 4zM24 40c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16z",
-                          },
-                        }),
-                      ]
-                    ),
-                    t._v(" "),
-                    e(
-                      "div",
-                      {
-                        staticClass: "title",
-                      },
-                      [t._v(t._s(t.message))]
-                    ),
-                    t._v(" "),
-                    404 === t.statusCode
-                      ? e(
-                          "p",
-                          {
-                            staticClass: "description",
-                          },
-                          [
-                            void 0 === t.$route
-                              ? e("a", {
-                                  staticClass: "error-link",
-                                  attrs: {
-                                    href: "/",
-                                  },
-                                })
-                              : e(
-                                  "NuxtLink",
-                                  {
-                                    staticClass: "error-link",
-                                    attrs: {
-                                      to: "/",
-                                    },
-                                  },
-                                  [t._v("Back to the home page")]
-                                ),
-                          ],
-                          1
-                        )
-                      : t._e(),
-                    t._v(" "),
-                    t._m(0),
-                  ]
-                ),
-              ]
-            );
+            return e("div", { staticClass: "error" });
           },
           [
             function () {
               var t = this._self._c;
-              return t(
-                "div",
-                {
-                  staticClass: "logo",
-                },
-                [
-                  t(
-                    "a",
-                    {
-                      attrs: {
-                        href: "https://nuxtjs.org",
-                        target: "_blank",
-                        rel: "noopener",
-                      },
-                    },
-                    [this._v("Nuxt")]
-                  ),
-                ]
-              );
+              return t("div");
             },
           ],
           !1,
@@ -57571,21 +57404,12 @@
           domains: [],
           alias: {},
         };
-      (fr.providers = Object(h.a)(
+      fr.providers = Object(h.a)(
         Object(h.a)({}, "static", {
           provider: o,
           defaults: {},
-        }),
-        "prismic",
-        {
-          provider: l,
-          defaults: {},
-        }
-      )),
-        d.a.component(Kn.name, Kn),
-        d.a.component(ar.name, ar),
-        d.a.component("NImg", Kn),
-        d.a.component("NPicture", ar);
+        })
+      );
       var mr = function (t, e) {
           e("img", Vn(fr, t));
         },
