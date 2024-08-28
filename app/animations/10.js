@@ -47931,7 +47931,7 @@
                             return (
                               n.setLayout(c),
                               (d = function () {
-                                n.$mount("#__nuxt"),
+                                n.$mount("#webgl-container"),
                                   w.afterEach(F),
                                   w.afterEach(R.bind(n)),
                                   w.afterEach(N.bind(n)),
@@ -53673,7 +53673,7 @@
                 "div",
                 {
                   domProps: {
-                    id: "__layout",
+                    id: "webgl-overlay",
                   },
                   key: this.layoutName,
                 },
@@ -53700,7 +53700,7 @@
               "div",
               {
                 domProps: {
-                  id: "__nuxt",
+                  id: "webgl-container",
                 },
               },
               [n, l]
@@ -57717,32 +57717,6 @@
                   case 0:
                     (r = {
                       "64x64": "/_nuxt/icons/icon_64x64.7c5bcb.png",
-                      "120x120": "/_nuxt/icons/icon_120x120.7c5bcb.png",
-                      "144x144": "/_nuxt/icons/icon_144x144.7c5bcb.png",
-                      "152x152": "/_nuxt/icons/icon_152x152.7c5bcb.png",
-                      "192x192": "/_nuxt/icons/icon_192x192.7c5bcb.png",
-                      "384x384": "/_nuxt/icons/icon_384x384.7c5bcb.png",
-                      "512x512": "/_nuxt/icons/icon_512x512.7c5bcb.png",
-                      ipad_1536x2048:
-                        "/_nuxt/icons/splash_ipad_1536x2048.7c5bcb.png",
-                      ipadpro9_1536x2048:
-                        "/_nuxt/icons/splash_ipadpro9_1536x2048.7c5bcb.png",
-                      ipadpro10_1668x2224:
-                        "/_nuxt/icons/splash_ipadpro10_1668x2224.7c5bcb.png",
-                      ipadpro12_2048x2732:
-                        "/_nuxt/icons/splash_ipadpro12_2048x2732.7c5bcb.png",
-                      iphonese_640x1136:
-                        "/_nuxt/icons/splash_iphonese_640x1136.7c5bcb.png",
-                      iphone6_50x1334:
-                        "/_nuxt/icons/splash_iphone6_50x1334.7c5bcb.png",
-                      iphoneplus_1080x1920:
-                        "/_nuxt/icons/splash_iphoneplus_1080x1920.7c5bcb.png",
-                      iphonex_1125x2436:
-                        "/_nuxt/icons/splash_iphonex_1125x2436.7c5bcb.png",
-                      iphonexr_828x1792:
-                        "/_nuxt/icons/splash_iphonexr_828x1792.7c5bcb.png",
-                      iphonexsmax_1242x2688:
-                        "/_nuxt/icons/splash_iphonexsmax_1242x2688.7c5bcb.png",
                     }),
                       n("icon", function (t) {
                         return r[t + "x" + t] || "";

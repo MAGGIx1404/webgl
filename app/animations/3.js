@@ -52,6 +52,9 @@
             n.a
               .timeline({
                 paused: !0,
+                onStart: function () {
+                  console.log("onStart");
+                },
               })
               .set(
                 this.$el,
@@ -516,8 +519,8 @@
         component = Object(c.a)(
           l,
           function () {
-            return (0, this._self._c)("section", {
-              staticClass: "index__section --webgl",
+            return (0, this._self._c)("div", {
+              staticClass: "webgl-events",
             });
           },
           [],
@@ -624,38 +627,6 @@
                 }, 0.5)
                 .restart();
             },
-            animateOut: function (t) {
-              var e = this;
-              t.to;
-              this.setMask(0, h.a.width, 0),
-                r.a
-                  .timeline({
-                    paused: !0,
-                  })
-                  .add(function () {
-                    e.$root.$emit("webgl:pause");
-                  }, 0)
-                  .to(
-                    this.$refs.layer,
-                    {
-                      autoAlpha: 0.1,
-                      duration: 0.9,
-                      ease: "none",
-                    },
-                    0
-                  )
-                  .to(this.$refs.bounding, {
-                    autoAlpha: 0.4,
-                    duration: 0.9,
-                    ease: "none",
-                  })
-                  .to(this.$el, {
-                    autoAlpha: 0,
-                    duration: 0.5,
-                    ease: "none",
-                  })
-                  .restart();
-            },
           },
         },
         y = _,
@@ -665,39 +636,11 @@
           function () {
             var t = this,
               e = t._self._c;
-            return e(
-              "div",
-              {
-                staticClass: "page index",
+            return e("HomeWebGL", {
+              attrs: {
+                copy: t.copy,
               },
-              [
-                e(
-                  "div",
-                  {
-                    ref: "bounding",
-                    staticClass: "bounding",
-                  },
-                  [
-                    t.ready
-                      ? [
-                          e("HomeWebGL", {
-                            attrs: {
-                              copy: t.copy,
-                              "data-section": "",
-                            },
-                          }),
-                        ]
-                      : t._e(),
-                  ],
-                  2
-                ),
-                t._v(" "),
-                e("div", {
-                  ref: "layer",
-                  staticClass: "page__layer",
-                }),
-              ]
-            );
+            });
           },
           [],
           !1,

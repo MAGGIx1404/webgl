@@ -1403,7 +1403,7 @@
               l.on("render", function (time, e) {
                 o.render(e);
               });
-            var m = document.querySelector("#__nuxt"),
+            var m = document.querySelector("#webgl-container"),
               f = new V.t(),
               track = function (e) {
                 var t,
