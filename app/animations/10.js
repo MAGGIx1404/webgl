@@ -39663,9 +39663,7 @@
         (t.exports = e);
     },
     320: function (t) {
-      t.exports = JSON.parse(
-        '{"title":"","meta":[{"hid":"charset","charset":"utf-8"},{"hid":"viewport","name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"mobile-web-app-capable","name":"mobile-web-app-capable","content":"yes"},{"hid":"og:type","name":"og:type","property":"og:type","content":"website"}],"link":[{"hid":"shortcut-icon","rel":"shortcut icon","href":"/_nuxt/icons/icon_64x64.7c5bcb.png"},{"hid":"apple-touch-icon","rel":"apple-touch-icon","href":"/_nuxt/icons/icon_512x512.7c5bcb.png","sizes":"512x512"},{"rel":"manifest","href":"/_nuxt/manifest.616c62eb.json","hid":"manifest","crossorigin":"use-credentials"}],"htmlAttrs":{"lang":"en"}}'
-      );
+      t.exports = "";
     },
     321: function (t, e, n) {
       var r;
