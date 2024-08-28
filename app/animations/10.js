@@ -55320,14 +55320,7 @@
                           (l = {}),
                           (h = {}),
                           (t.prev = 4),
-                          (t.next = 7),
-                          He.api(
-                            "https://bayc.cdn.prismic.io/api/v2",
-                            Object.assign({}, l, {
-                              accessToken:
-                                "MC5ZaC1GSEJFQUFDVUFBbXEx.77-9PjILMANXAe-_vVfvv70M77-977-9SDnvv702H--_ve-_vQR7P--_vSzvv73vv70g77-9YjA",
-                            })
-                          )
+                          (t.next = 7)
                         );
                       case 7:
                         (h = t.sent), (t.next = 14);
@@ -55430,68 +55423,6 @@
                             Ye
                           ),
                         })),
-                          n("prismic", f),
-                          (e.$prismic = f),
-                          window.onNuxtReady &&
-                            window.onNuxtReady(function (t) {
-                              var script = document.createElement("script");
-                              (script.src =
-                                "//static.cdn.prismic.io/prismic.min.js?repo=bayc&new=true"),
-                                document.body.appendChild(script),
-                                window.addEventListener(
-                                  "prismicPreviewUpdate",
-                                  (function () {
-                                    var e = Object(c.a)(
-                                      regeneratorRuntime.mark(function e(n) {
-                                        return regeneratorRuntime.wrap(
-                                          function (e) {
-                                            for (;;)
-                                              switch ((e.prev = e.next)) {
-                                                case 0:
-                                                  if (
-                                                    !t ||
-                                                    !("refresh" in t) ||
-                                                    "function" !=
-                                                      typeof t.refresh
-                                                  ) {
-                                                    e.next = 7;
-                                                    break;
-                                                  }
-                                                  if (
-                                                    (n.preventDefault(),
-                                                    !t.$store ||
-                                                      !t.$store._actions
-                                                        .nuxtServerInit)
-                                                  ) {
-                                                    e.next = 5;
-                                                    break;
-                                                  }
-                                                  return (
-                                                    (e.next = 5),
-                                                    t.$store.dispatch(
-                                                      "nuxtServerInit",
-                                                      t.$options.context
-                                                    )
-                                                  );
-                                                case 5:
-                                                  return (
-                                                    (e.next = 7), t.refresh()
-                                                  );
-                                                case 7:
-                                                case "end":
-                                                  return e.stop();
-                                              }
-                                          },
-                                          e
-                                        );
-                                      })
-                                    );
-                                    return function (t) {
-                                      return e.apply(this, arguments);
-                                    };
-                                  })()
-                                );
-                            }),
                           (t.next = 21);
                         break;
                       case 21:
